@@ -1,0 +1,38 @@
+HƯỚNG DẪN DEPLOY WEBSITE LÊN FIREBASE HOSTING
+================================================
+
+File index.html trong thư mục này là bản demo hoàn chỉnh (landing page +
+dashboard minh họa), tự chứa toàn bộ CSS/JS, chỉ cần internet để tải Google
+Fonts — không cần cài thêm thư viện nào khác.
+
+Các bước deploy:
+
+1. Cài Firebase CLI (nếu chưa có):
+   npm install -g firebase-tools
+
+2. Đăng nhập Firebase:
+   firebase login
+
+3. Trong một thư mục dự án mới, khởi tạo Hosting:
+   firebase init hosting
+   - Chọn hoặc tạo project Firebase
+   - Khi được hỏi "public directory", đặt tên ví dụ: public
+
+4. Copy file index.html vào đúng thư mục public/ vừa tạo.
+
+5. Deploy:
+   firebase deploy
+
+6. Firebase sẽ trả về một đường link dạng:
+   https://<ten-project>.web.app
+   Đây chính là link web để đưa vào báo cáo/slide thuyết trình.
+
+LƯU Ý
+-----
+- Dữ liệu cảm biến trên dashboard hiện đang là dữ liệu minh họa (random),
+  được sinh ra bằng JavaScript ở cuối file index.html.
+- Khi có dữ liệu thật từ Raspberry Pi, chỉ cần thay đoạn code sinh số ngẫu
+  nhiên bằng đoạn gọi Firebase Realtime Database / Firestore — phần giao
+  diện (CSS, layout) giữ nguyên không cần sửa.
+- Màu thương hiệu dùng trong file: #4F923C (xanh đậm) và #79A73A (xanh nhạt),
+  khai báo ở đầu file trong phần CSS (:root) nếu cần chỉnh lại.
