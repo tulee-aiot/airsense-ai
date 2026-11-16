@@ -6,9 +6,9 @@ Website giới thiệu dự án khởi nghiệp sinh viên **AirSense AI** — h
 
 ## Về dự án
 
-AirSense AI theo dõi 6 chỉ số môi trường (CO₂, bụi mịn PM2.5, khí CO, VOC, nhiệt độ, độ ẩm) theo thời gian thực qua mạng cảm biến ESP32, xử lý và dự đoán bằng AI chạy trên Raspberry Pi, đồng bộ dữ liệu và cảnh báo qua Firebase tới ứng dụng Android và web.
+AirSense AI theo dõi 6 chỉ số môi trường (CO₂, bụi mịn PM2.5, khí CO, VOC, nhiệt độ, độ ẩm) theo thời gian thực qua mạng cảm biến ESP32, xử lý và dự đoán bằng AI, đồng bộ dữ liệu và cảnh báo qua Firebase tới ứng dụng Android và web.
 
-Dự án khởi nghiệp sinh viên 2026 — Trường Đại học Sư phạm Kỹ thuật Hưng Yên, Khoa Kinh tế.
+Dự án khởi nghiệp sinh viên 2026 — Trường Đại học Công nghệ Kỹ thuật Hưng Yên, Khoa Kinh tế.
 
 ## Nội dung repo
 
@@ -27,7 +27,7 @@ Chỉ cần mở trực tiếp file `index.html` bằng trình duyệt, không c
 ## Deploy
 
 - **GitHub Pages** (bản giới thiệu tĩnh — dùng cho repo này): xem hướng dẫn bật Pages trong phần Settings của repo.
-- **Firebase Hosting** (bản dashboard, sẽ nối dữ liệu thật từ Raspberry Pi qua Firebase): xem `HUONG_DAN_DEPLOY.txt`.
+- **Firebase Hosting** (bản dashboard, sẽ nối dữ liệu thật qua Firebase): xem `HUONG_DAN_DEPLOY.txt`.
 
 ## Nhóm dự án
 
